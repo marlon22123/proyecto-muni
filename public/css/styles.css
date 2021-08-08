@@ -714,15 +714,15 @@ section {
   background-image:url("../img/chevron.png");
 }
 .documentos .icon-box {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   padding: 20px;
-  background: #f6f6f6;
+ 
   transition: ease-in-out 0.3s;
 }
 
 .documentos .icon-box i {
-  font-size: 32px;
+  font-size: 60px;
   padding-right: 10px;
   line-height: 1;
 }
@@ -744,9 +744,7 @@ section {
   color: #3498db;
 }
 
-.documentos .icon-box:hover {
-  background: #06685969;
-}
+
 
 
 /*--------------------------------------------------------------
