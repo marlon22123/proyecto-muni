@@ -11,6 +11,8 @@ use App\Http\Controllers\Admin\Post_documentController;
 use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\PostController;
 
+use App\Http\Controllers\Admin\contacto;
+
 Route::get('',[HomeController::class,'index'])->name('admin.home');
 
 Route::resource('sliders', Slider_PrincipalController::class)->names('admin.sliders');
@@ -26,3 +28,5 @@ Route::resource('documentos/normativos/posts', Post_documentController::class)->
 Route::resource('tags', TagController::class)->except('show')->names('admin.tags');
 
 Route::resource('posts', PostController::class)->except('show')->names('admin.posts');
+
+Route::get('contacto',[contacto::class,'index'])->name('admin.contacts.index');

@@ -13,7 +13,7 @@
           <div class="contact-info  d-none d-md-flex align-items-center">
            
             <i class="bi bi-phone align-items-center ms-4"
-              ><span class="fs-6 fw-lighter">+1 5589 55488 55</span></i
+              ><span class="fs-6 fw-lighter">+51 99000000</span></i
             >
           </div>
          
@@ -40,14 +40,14 @@
                   <li><a href="{{route('taraco.himno')}}">Himno de Taraco</a></li>
                   <li><a href="{{route('taraco.ubicacion')}}">Ubicacion Geografica</a></li>
                 </ul>
-                <li class="dropdown"><a href="#"><span>Gobierno</span> <i class="bi bi-chevron-down"></i></a>
+                <li class="dropdown"><a href="#"><span>Documentos de gestion</span> <i class="bi bi-chevron-down"></i></a>
                   <ul>
                     @foreach ($gobierno_docs as $gobierno_doc)
                     <li><a href="{{route('gobierno.show',$gobierno_doc)}}">   {{$gobierno_doc->name}}</a></li>
                      @endforeach
                   </ul>
                 </li>
-                <li class="dropdown"><a href="#"><span>Documentos</span> <i class="bi bi-chevron-down"></i></a>
+                <li class="dropdown"><a href="#"><span>Documentos Normativos</span> <i class="bi bi-chevron-down"></i></a>
                   <ul>
                       @foreach ($category_documents as $category_document)
                                      <li><a href="{{route('documento.categoria',$category_document)}}">{{$category_document->name}}</a></li>
@@ -60,7 +60,7 @@
                   <li class="link"><a href="{{route('posts.index')}}"><span>Publicaciones</span></i></a>
                  
                 </li>
-                <li class="link"><a href="{{route('posts.index')}}"><span>Contacto</span></i></a>
+                <li class="link"><a href="{{route('taraco.contacts.index')}}"><span>Contacto</span></i></a>
                  
                 </li>
               </li>

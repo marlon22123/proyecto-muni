@@ -73,7 +73,7 @@
                 <h4>Useful Links</h4>
                 <ul>
                   <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">docuemntos</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Documentos</a></li>
                   <li><i class="bx bx-chevron-right"></i> <a href="#">normas</a></li>
                   <li><i class="bx bx-chevron-right"></i> <a href="#">comunicados</a></li>
                   <li><i class="bx bx-chevron-right"></i> <a href="#">convocartortias</a></li>
@@ -92,11 +92,11 @@
   
   
               <div class="col-lg-3 col-md-6 footer-info">
-                <h3>Muni Taraco</h3>
+        
                               <h3>Muni Taraco</h3>
                   <img src="{{asset('img/logo2.png')}}" alt="" height="150px">
                 <div class="social-links mt-3">
-                  <a href="{{route('home.index')}}" class="twitter"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.facebook.com/gobiernolocaltaraco" class="twitter"><i class="bi bi-facebook"></i></a>
                   
                 </div>
               </div>

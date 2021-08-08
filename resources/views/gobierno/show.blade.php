@@ -1,6 +1,6 @@
 @extends('layouts.plantilla')
 @section('title')
-   {{$doc->name}} -File Taraco
+   {{$doc->name}} -Muni Taraco
 @endsection
 @section('link')
 Gobierno
@@ -15,7 +15,7 @@ Gobierno
     <section>
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <h2>Documento <span id="span">{{$doc->name}}</span></h2>
+                <h2> <span id="span">{{$doc->name}}</span></h2>
 
               </div>
             <div class="ratio ratio-16x9" >

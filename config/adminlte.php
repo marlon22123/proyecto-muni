@@ -312,7 +312,14 @@ return [
             'text' => 'Listado de Publicaciones',
             'route'  => 'admin.posts.index',
             'icon' => 'fas fa-list-alt fa-fw',
-            /* 'active'=> ['admin/tags*'] */
+             'active'=> ['admin/posts*']
+        ], 
+        ['header' => 'Mensajes de Contacto'],
+        [
+            'text' => 'Mensajes',
+            'route'  => 'admin.contacts.index',
+            'icon' => 'fas fa-list-alt fa-fw',
+             'active'=> ['admin/contact*']
         ], 
        
     ],

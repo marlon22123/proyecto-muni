@@ -16,8 +16,8 @@ Documentos
         <div class="container">
             <h1 class="text-center text-uppercase"> {{$category->name}}</h1>
 <div class="table-responsive text-center " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
-        <table class="table table-bordered border-primary border-top-5">
-            <thead>
+        <table id="documentos-tabla" class="table table-striped">
+            <thead style="background-color: #0d6dfd7e">
               <tr>
                 <th scope="col">Titulo</th>
                 <th scope="col">Descripcion</th>
@@ -32,7 +32,7 @@ Documentos
               <tr>
                 <th scope="row">{{$post->title}}</th>
                 <td>{!!$post->extract!!}</td>
-                <td><a href="{{Storage::url($post->file->url)}}"><i class="bi bi-file-earmark-text" style="font-size: 30px"></i></a></td>
+                <td><a href="{{Storage::url($post->file->url)}}"><i class="bi bi-file-earmark-text fs-1" style="font-size: 30px"></i></a></td>
                 <td>{{$post->created_at}}</td>
               </tr>
                   @endforeach
@@ -50,4 +50,9 @@ Documentos
   
 
     </section>
+    <script>
+   
+  
+
+    </script>
 @endsection

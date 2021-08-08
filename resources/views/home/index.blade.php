@@ -280,11 +280,11 @@
             <img src="{{asset('img/enlaces/logo-banco-nacion.png')}}" class="img-fluid" alt="">
           </a>
           </div>
-          <div class="swiper-slide">
+      {{--     <div class="swiper-slide">
             <a href="https://www.mef.gob.pe/">
             <img src="{{asset('img/enlaces/mef.png')}}" class="img-fluid" alt="">
           </a>
-          </div>
+          </div> --}}
           <div class="swiper-slide">
             <a href="https://www.reniec.gob.pe/">
             <img src="{{asset('img/enlaces/reniec.png')}}" class="img-fluid" alt="">

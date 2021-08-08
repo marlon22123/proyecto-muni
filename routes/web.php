@@ -5,6 +5,7 @@ use App\Http\Controllers\GobiernoController;
 use Illuminate\Support\Facades\Route;
 Use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,8 @@ Route::get('taraco/himno-taraco', function () {
 Route::get('taraco/hubicacion-taraco', function () {
     return view('taraco.ubicacion');
 })->name('taraco.ubicacion');
+
+Route::resource('contacto', ContactController::class)->names('taraco.contacts');
 
 
 Route::get('gobierno/{doc}',[GobiernoController::class,'show'])->name('gobierno.show');
