@@ -3,16 +3,16 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Lista de Docuemntos principales de Gobierno</h1>
+    <h1>Lista de Documentos principales de Gobierno</h1>
 @stop
 
 @section('content')
 <div class="card">
     <div class="card-header">
-        <a href="{{route('admin.files.create')}}" class="btn btn-success">Añadir Imagen</a>
+        <a href="{{route('admin.files.create')}}" class="btn btn-success">Añadir Documento</a>
     </div>
     <div class="card-body">
-      <table class="table table-stripet">
+      <table id="tabla-documetos-principales" class="table table-striped text-center">
              <thead>
                  <tr>
                      <th>ID</th>
@@ -53,16 +53,47 @@
 @stop
 
 
-@section('css')
-    <style>
-        #pdf{
-            height: 50vh;
 
-        }
-    </style>
+@section('css')
+<style>
+    #pdf{
+        height: 45vh;
+        width: 34vh
+
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap5.min.css">
 @stop
+
 
 @section('js')
-    <script> console.log('Hi!'); </script>
-@stop
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap5.min.js"></script>
+
+
+    <script>
+          $('#tabla-documetos-principales').DataTable({
+                      responsive:true,
+                      autoWidth:false,
+                      "language": {
+            "lengthMenu": "Mostrar _MENU_ registros por pagina",
+            "zeroRecords": "Nada encontrado - disculpa",
+            "info": "Mostrando la pagina _PAGE_ de _PAGES_",
+            "infoEmpty": "No records available",
+            "infoFiltered": "(Filtrado de _MAX_ registros totales)",
+            'search': 'Buscar: ',
+            'paginate': {
+              'next': 'Siguiente',
+              'previous': 'Anterior'
+            }
+        }
+                    });
+    </script>
+@endsection
+
 
