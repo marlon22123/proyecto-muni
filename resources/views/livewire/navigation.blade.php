@@ -8,15 +8,15 @@
           "
         >
           <div class="contact-info d-flex align-items-center">
-            <i class="bi bi-envelope d-flex align-items-center"
-              ><a href="mailto:contact@example.com">contact@example.com</a></i
+            <i class="bi bi-envelope fs-6  d-flex align-items-center"
+              ><a class="fs-6 mb-1 fw-lighter"  href="" >Contacto</a></i
             >
             <i class="bi bi-phone d-flex align-items-center ms-4"
-              ><span>+1 5589 55488 55</span></i
+              ><span class="fs-6 fw-lighter">+1 5589 55488 55</span></i
             >
           </div>
           <div class="social-links d-none d-md-flex align-items-center">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.facebook.com/gobiernolocaltaraco"  target="_blank" class="facebook">Facebook Oficial <i class="bi bi-facebook"></i></a>
           </div>
         </div>
       </section>
@@ -32,7 +32,7 @@
             >
           </div>
   
-          <nav id="navbar" class="navbar">
+          <nav id="navbar" class="navbar  fw-normal">
             <ul>
               <li class="dropdown"><a href="#"><span>Taraco</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
@@ -59,6 +59,9 @@
                 </li>
               
                   <li class="link"><a href="{{route('posts.index')}}"><span>Publicaciones</span></i></a>
+                 
+                </li>
+                <li class="link"><a href="{{route('posts.index')}}"><span>Contacto</span></i></a>
                  
                 </li>
               </li>
